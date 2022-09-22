@@ -1,13 +1,11 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <stdio.h>
 /**
- * main - Entry point of programs
- *  Description: This program will return 0
- * return : return 0
- */
-
+ * Main - Entry point of programs
+ * Description: program that assigns a random number to a variable
+ * Return: always return 0 (success)
+*/
 int main(void)
 {
 	int n;
