@@ -1,24 +1,41 @@
-section .data
-
-
-
-    message db "Hello, Holberton", 10, 0
+extern printf
 
 
 
 section .text
 
-
-
 global main
+
+
 
 main:
 
-    mov rax, 1
+push rbp
 
-    mov rdi, 1
 
-    mov rsi, message
 
-    mov rdx, 17
+mov rdi, fmt
 
+mov rsi, msg
+
+mov rax, 0
+
+call printf
+
+
+
+pop rbp
+
+
+
+mov rax, 0
+
+ret
+
+
+
+section .data
+
+msg: db "Hello, Holberton", 0
+
+fmt: db "%s", 10, 0
